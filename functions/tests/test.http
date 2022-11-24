@@ -1,0 +1,110 @@
+## PUSH EVENT
+POST http://localhost:3000/gitlabHook/
+x-gitlab-event: Push Hook
+x-gitlab-token: ${{x-gitlab-token}}
+Content-Type: application/json
+
+{
+  "object_kind": "push",
+  "event_name": "push",
+  "before": "e9aabbe9e3c546bad0b3b4fca99eb56019611a5f",
+  "after": "5f5b67f0fbf573e1204db51c59293a7e2e7c83a6",
+  "ref": "refs/heads/main",
+  "checkout_sha": "5f5b67f0fbf573e1204db51c59293a7e2e7c83a6",
+  "message": null,
+  "user_id": 3247951,
+  "user_name": "Hải Đăng Nguyễn",
+  "user_username": "dangnhdev",
+  "user_email": "",
+  "user_avatar": "https://gitlab.com/uploads/-/system/user/avatar/3247951/avatar.png",
+  "project_id": 31999301,
+  "project": {
+    "id": 31999301,
+    "name": "Sample Crawler",
+    "description": "",
+    "web_url": "https://gitlab.com/dangnhdev/sample-crawler",
+    "avatar_url": null,
+    "git_ssh_url": "git@gitlab.com:dangnhdev/sample-crawler.git",
+    "git_http_url": "https://gitlab.com/dangnhdev/sample-crawler.git",
+    "namespace": "Hải Đăng Nguyễn",
+    "visibility_level": 0,
+    "path_with_namespace": "dangnhdev/sample-crawler",
+    "default_branch": "main",
+    "ci_config_path": "",
+    "homepage": "https://gitlab.com/dangnhdev/sample-crawler",
+    "url": "git@gitlab.com:dangnhdev/sample-crawler.git",
+    "ssh_url": "git@gitlab.com:dangnhdev/sample-crawler.git",
+    "http_url": "https://gitlab.com/dangnhdev/sample-crawler.git"
+  },
+  "commits": [
+    {
+      "id": "5f5b67f0fbf573e1204db51c59293a7e2e7c83a6",
+      "message": "refactor ui",
+      "title": "refactor ui",
+      "timestamp": "2021-12-10T07:01:39+07:00",
+      "url": "https://gitlab.com/dangnhdev/sample-crawler/-/commit/5f5b67f0fbf573e1204db51c59293a7e2e7c83a6",
+      "author": {
+        "name": "Hải Đăng",
+        "email": "[REDACTED]"
+      },
+      "added": [
+      ],
+      "modified": [
+        "src/main/resources/META-INF/resources/index.xhtml"
+      ],
+      "removed": [
+      ]
+    },
+    {
+      "id": "9ac206cbf788998aa03f79bb7fb90b64d04ecfbd",
+      "message": "refactor ui",
+      "title": "refactor ui",
+      "timestamp": "2021-12-10T06:44:17+07:00",
+      "url": "https://gitlab.com/dangnhdev/sample-crawler/-/commit/9ac206cbf788998aa03f79bb7fb90b64d04ecfbd",
+      "author": {
+        "name": "Hải Đăng",
+        "email": "[REDACTED]"
+      },
+      "added": [
+      ],
+      "modified": [
+        "src/main/groovy/com/example/crawler/SampleEntity.groovy",
+        "src/main/resources/META-INF/resources/index.xhtml"
+      ],
+      "removed": [
+      ]
+    },
+    {
+      "id": "e9aabbe9e3c546bad0b3b4fca99eb56019611a5f",
+      "message": "add video url load",
+      "title": "add video url load",
+      "timestamp": "2021-12-10T06:29:31+07:00",
+      "url": "https://gitlab.com/dangnhdev/sample-crawler/-/commit/e9aabbe9e3c546bad0b3b4fca99eb56019611a5f",
+      "author": {
+        "name": "Hải Đăng",
+        "email": "[REDACTED]"
+      },
+      "added": [
+      ],
+      "modified": [
+        "src/main/groovy/com/example/crawler/SampleEntity.groovy",
+        "src/main/groovy/com/example/crawler/TableView.groovy",
+        "src/main/resources/META-INF/resources/index.xhtml"
+      ],
+      "removed": [
+      ]
+    }
+  ],
+  "total_commits_count": 3,
+  "push_options": {
+  },
+  "repository": {
+    "name": "Sample Crawler",
+    "url": "git@gitlab.com:dangnhdev/sample-crawler.git",
+    "description": "",
+    "homepage": "https://gitlab.com/dangnhdev/sample-crawler",
+    "git_http_url": "https://gitlab.com/dangnhdev/sample-crawler.git",
+    "git_ssh_url": "git@gitlab.com:dangnhdev/sample-crawler.git",
+    "visibility_level": 0
+  }
+}
