@@ -1,10 +1,11 @@
 **Common Command**
 ***
-Start server locally:
+**Start server locally:**
 ```
 npm run local-server
 ```
-Tunnel to test request from Gitlab: 
+
+Tunnel to test request from Gitlab directly to your local server: 
 ```
 ssh -R 80:localhost:3000 localhost.run
 ```
