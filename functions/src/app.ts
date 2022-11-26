@@ -10,7 +10,8 @@ const app = express()
 app.use(express.json())
 
 app.post('/gitlabHook', async function (request, response) {
-    if (!(request.headers['x-gitlab-token'] == GITLAB_WEBHOOK_TOKEN)) {
+    const gitlabToken = request.headers['x-gitlab-token']
+    if (gitlabToken && (gitlabToken != GITLAB_WEBHOOK_TOKEN)) {
         response.status(401).send('Wrong auth token')
         return
     }
