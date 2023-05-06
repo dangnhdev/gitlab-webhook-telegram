@@ -1,9 +1,0 @@
-{
-  "proseWrap": "never",
-  "quoteProps": "consistent",
-  "singleQuote": true,
-  "trailingComma": "es5",
-  "tabWidth": 4,
-  "useTabs": true,
-  "semi": false
-}

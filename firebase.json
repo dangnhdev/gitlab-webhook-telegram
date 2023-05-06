@@ -1,9 +1,11 @@
 {
   "hosting": {
-    "rewrites": [ {
-      "source": "**",
-      "function": "gitlabHookFunction"
-    } ]
+    "rewrites": [
+      {
+        "source": "**",
+        "function": "gitlabHookFunction"
+      }
+    ]
   },
   "functions": [
     {
@@ -17,6 +19,7 @@
         "local-server.*",
         "tests"
       ],
+      "runtime": "nodejs18",
       "predeploy": [
         "npm --prefix \"$RESOURCE_DIR\" run build"
       ]
